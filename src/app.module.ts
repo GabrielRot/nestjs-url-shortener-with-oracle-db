@@ -20,7 +20,7 @@ oracledb.initOracleClient({ libDir: 'C:\\oracle\\instantclient_19_28' });
       port: 1521,
       username: process.env.ORACLE_DB_USERNAME,
       password: process.env.ORACLE_DB_PASSWORD,
-      connectString: `${process.env.ORACLE_DB_HOST}:1521/cs0040p`,
+      connectString: `${process.env.ORACLE_DB_HOST}:${process.env.ORACLE_DB_PORT}/${process.env.ORACLE_DB_ENDPOINT}`,
       synchronize: true,
       autoLoadEntities: true
     }),
